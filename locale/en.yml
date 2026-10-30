@@ -1,0 +1,35 @@
+blessing-oauth-client:
+  admin:
+    popup:
+      title: Blessing Skin Login
+      field:
+        base-url: Blessing Skin root URL
+        app-id: OAuth client ID
+        app-secret: OAuth client secret
+        button-title: Label for login button
+        button-title-placeholder: => blessing-oauth-client.api.default-login-button-title
+        button-icon: Icon for login button
+        button-icon-image: Icon image URL (optional)
+        button-icon-image-help: If set (and no icon is uploaded), this image is shown instead of the Font Awesome icon. Leave empty to use the icon class above.
+        button-icon-upload: Upload an icon image
+        button-icon-upload-help: Upload a local PNG/JPEG/WebP image (max 2 MB). It is used instead of the URL and icon above.
+        message-help: Leave empty to use the default translation.
+        message-linked: Account linked (success message)
+        message-error: Generic login error
+        message-error-state: Invalid login state
+        message-error-provider: Authorization redirect failed
+        message-error-token: Access token request failed
+        message-error-userinfo: User profile request failed
+        message-error-identifier: Missing user identifier
+        verify-ssl: Verify the SSL certificate
+        verify-ssl-help: Only disable this when Blessing Skin uses a self-signed certificate. Disabling it lowers security.
+  api:
+    default-login-button-title: Login with Blessing Skin
+  forum:
+    linked: Your Blessing Skin account has been linked to your Flarum account.
+    login-error: Could not log in with Blessing Skin. Please try again.
+    login-error-state: The login session expired or was opened in another tab. Please try again.
+    login-error-provider: Blessing Skin did not authorize the login.
+    login-error-token: Blessing Skin did not return an access token. Check the OAuth client ID/secret and the Blessing Skin log.
+    login-error-userinfo: Blessing Skin did not return your profile.
+    login-error-identifier: Blessing Skin did not return a user ID.

@@ -1,0 +1,35 @@
+blessing-oauth-client:
+  admin:
+    popup:
+      title: Blessing Skin 登录
+      field:
+        base-url: Blessing Skin 根 URL
+        app-id: OAuth 客户端 ID
+        app-secret: OAuth 客户端 Secret
+        button-title: 登录按钮的文本
+        button-title-placeholder: => blessing-oauth-client.api.default-login-button-title
+        button-icon: 登录按钮的图标
+        button-icon-image: 图标图片地址（可选）
+        button-icon-image-help: 填写后（且未上传图标时）使用这张图片代替 Font Awesome 图标；留空则继续使用图标类名。
+        button-icon-upload: 上传图标图片
+        button-icon-upload-help: 上传本地 PNG/JPEG/WebP 图片（最大 2 MB），会优先于上面的 URL 和 Font Awesome 图标。
+        message-help: 留空则使用插件自带的中文翻译。
+        message-linked: 账号绑定成功提示
+        message-error: 通用登录失败提示
+        message-error-state: 登录状态失效提示
+        message-error-provider: 跳转授权失败提示
+        message-error-token: 获取访问令牌失败提示
+        message-error-userinfo: 获取用户信息失败提示
+        message-error-identifier: 缺少用户标识提示
+        verify-ssl: 校验 SSL 证书
+        verify-ssl-help: 仅当 Blessing Skin 使用自签名证书时才关闭；关闭后会降低安全性。
+  api:
+    default-login-button-title: 使用 Blessing Skin 登录
+  forum:
+    linked: 你的 Blessing Skin 账号已与当前 Flarum 账号绑定。
+    login-error: 使用 Blessing Skin 登录失败，请重试。
+    login-error-state: 登录会话已过期或在其他标签页发起了登录，请重试。
+    login-error-provider: Blessing Skin 未授权本次登录。
+    login-error-token: 获取访问令牌失败，请检查 OAuth 客户端 ID/Secret 和 Blessing Skin 日志。
+    login-error-userinfo: 获取 Blessing Skin 用户信息失败。
+    login-error-identifier: Blessing Skin 没有返回用户 ID。
